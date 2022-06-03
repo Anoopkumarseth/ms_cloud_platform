@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a {
+    display: inline-block;
+    color: var(--dark-color);
+}
+
+strong .strong {
+    font-weight: var(--font-weight-bold);
+}
+
+img {
+    max-width: 100%;
+}
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+ul, ol {
+    padding-left: 18px;
+    li:not(:last-child){
+        margin-bottom: 15px;
+    }
+}
+
+
+
+.open-menu:not(.toggle) {
+    overflow: hidden;
+}
+

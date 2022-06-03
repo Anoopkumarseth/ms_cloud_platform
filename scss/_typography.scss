@@ -1,0 +1,103 @@
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: var(--dark-color);
+	font-family: var(--font-family);
+	font-size: var(--content-size);
+	font-weight: var(--font-weight);
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: var(--heading-margin);
+	font-weight: var(--font-weight-bold);
+	line-height: 1.2;
+}
+h1{
+	font-size: calc(1.375rem + 1.5vw);
+}
+h2{
+	font-size: calc(1.325rem + 1vw);
+}
+h3{
+	font-size: 1.3rem;
+}
+h4{
+	font-size: 1.275rem;
+}
+h5{
+	font-size: 1.25rem;
+}
+
+h6{
+	font-size: 1rem;
+}
+p {
+	margin-top: 0;
+	line-height: 1.5;
+	&:not(:last-child){
+		margin-bottom: 15px;
+	}
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code, kbd, tt, var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+
+@include up-xl{
+	h1{
+		font-size: 2.62500rem;
+	}
+	h2{
+		font-size: 2.12500rem;
+	}
+	h3{
+		font-size: 1.75rem;
+	}
+	h4{
+		font-size: 1.125rem;
+	}
+	h4{
+		font-size: 1rem;
+	}
+}
