@@ -33,3 +33,5 @@ scrollTop.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+
+
