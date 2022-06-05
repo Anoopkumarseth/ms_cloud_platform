@@ -13,11 +13,15 @@ for (let i = 0;i<tablinks.length;i++) {
 
 // scroll to top
 const scrollTop = document.querySelector(".scrollTop");
+const mainHeader = document.querySelector(".main-header");
+
 const scrollAppearance = () => {
     if (window.scrollY > 320) {
         scrollTop.classList.add("active");
+        mainHeader.classList.add("main-header-sticky");
     } else {
         scrollTop.classList.remove("active");
+        mainHeader.classList.remove("main-header-sticky");
     }
 };
 document.addEventListener("scroll", () => {

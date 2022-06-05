@@ -1,0 +1,38 @@
+@include down-lg{
+    .jumbotron{
+        flex-direction: column-reverse !important;
+        &-caption{
+            width: 100%;
+            padding: 15px 15px;
+        }
+    }
+}
+@include down-xl{
+    .institutes-grid{
+        justify-content: flex-start;
+    }
+}
+@include down-sm{
+    .tab li:not(:last-child){
+        margin-right: 5px;
+    }
+    .tab-link{
+        padding: 7px 10px;
+    }
+}
+@include down-md{
+    .scrollTop{
+        height: 42px;
+        width: 42px;
+        background-size: 90%;
+    }
+    .page-section{
+        padding: 40px 0;
+    }
+    .tab{
+        margin-bottom: 40px;
+    }
+    .hero::before{
+        background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+    }
+}
