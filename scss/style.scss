@@ -132,6 +132,7 @@
         color: rgba(0, 0, 0, 0.6);
         transition: all ease-in-out 0.3s;
         font-size: 20px;
+        border-bottom: 3px solid transparent;
         &.active {
             border-bottom: 3px solid #0067b8;
             color: rgba(0, 0, 0, 1);
@@ -230,4 +231,14 @@
     z-index: 99;
     bottom: 45px;
     right: 45px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease-in-out .3s;
+    &.active{
+        visibility: visible;
+        opacity: 1;
+    }
+    &:hover{
+        transform: translatey(-10px);
+    }
 }
